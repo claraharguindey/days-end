@@ -7,8 +7,12 @@
 a {
   text-decoration: none;
   color: inherit;
+  pointer-events: none;
 }
 
+button {
+  pointer-events: none;
+}
 @font-face {
   font-family: "Jet Brain Mono";
   src: url("fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
