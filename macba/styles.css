@@ -170,6 +170,7 @@ header .header-icons {
 
 .images-container {
   width: 798px;
+  min-width: 798px;
   height: calc(100vh - 56px);
   overflow-y: auto;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
