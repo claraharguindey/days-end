@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="main-header" class="w-100 position-fixed ">
+        <div class="header-wrapper">
+            <div class="col-md-10 col-5 d-flex align-items-center">
+                <a href="https://www.macba.cat/en/">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M56 0.195849L55.8075 0H0.194051L0 0.189275V55.8043L0.192484 56H55.8075L56 55.8043V0.195849Z"
+                            fill="white"></path>
+                        <path
+                            d="M48.6872 37.9862H51.9586L52.1511 37.7906L50.4191 33.0912H50.2267L48.4947 37.7906L48.6872 37.9862ZM52.7284 40.3358H47.9174L47.5325 40.5315L46.5705 43.0767L46.378 43.2726H44.646L44.4535 43.0767V41.1188L48.8797 29.7621L49.0722 29.5665H51.5739L51.7661 29.7621L56 40.6249V0.195849L55.8073 0H0.19405L0 0.189275V55.8046L0.192484 56H55.8073L55.9998 55.8046V43.273H54.2678L54.0754 43.0771L53.1131 40.5319L52.7284 40.3358ZM32.3298 29.7621L32.5221 29.5665H38.6802C40.6046 29.5665 42.5289 30.5453 42.5289 33.091C42.5289 34.4615 41.9516 35.6362 40.6046 36.0277V36.2234C42.1441 36.6155 42.9139 37.7902 42.9139 39.5522C42.9139 42.2937 40.9892 43.2726 39.065 43.2726H32.5219L32.3296 43.0767V29.7621H32.3298ZM22.5157 26.2379L22.3232 26.4337H20.014L19.8215 26.2379V18.6013H19.629L16.5499 26.2379L16.3574 26.4337H14.2407L14.0482 26.2379L10.969 18.6013H10.7767V26.2379L10.5842 26.4337H8.27503L8.08255 26.2379V12.9229L8.27503 12.7272H11.1615L11.354 12.9229L15.2027 22.5175H15.3952L19.2439 12.9229L19.4363 12.7272H22.323L22.5155 12.9229L22.5157 26.2379ZM36.3706 26.2379L36.1781 26.4337H34.4461L34.2539 26.2379L33.2914 23.6924L32.9067 23.4968H28.0958L27.711 23.6924L26.7486 26.2379L26.5561 26.4337H24.8241L24.6316 26.2379V24.2798L29.0576 12.9229L29.2501 12.7272H31.7518L31.9442 12.9229L36.3704 24.2798V26.2379H36.3706ZM44.069 26.6321C39.8351 26.6321 37.5259 23.695 37.5259 19.5832C37.5259 15.4713 39.8351 12.5342 44.069 12.5342C47.1479 12.5342 49.2648 14.1006 49.6498 16.6462L49.4573 16.8419H47.1479L46.9556 16.6462C46.5705 15.4715 45.6084 14.884 44.069 14.884C41.3748 14.884 40.2201 16.8419 40.2201 19.5832C40.2201 22.3245 41.3746 24.2825 44.069 24.2825C45.6084 24.2825 46.5705 23.695 46.9556 22.3245L47.1479 22.1286H49.4573L49.6498 22.3245C49.2648 25.0657 47.1479 26.6321 44.069 26.6321ZM32.1369 21.1468L32.3294 20.9511L30.5975 16.2517H30.405L28.673 20.9511L28.8655 21.1468H32.1369ZM35.2163 31.9163L35.024 32.1119V34.853L35.2163 35.0489H38.2952C39.4499 35.0489 39.8347 34.2657 39.8347 33.4823C39.8347 32.5034 39.4499 31.9163 38.2952 31.9163H35.2163ZM35.2163 37.3985L35.024 37.5941V40.7271L35.2163 40.9228H38.2952C39.6424 40.9228 40.2197 40.3356 40.2197 39.1607C40.2197 37.986 39.6424 37.3983 38.2952 37.3983H35.2163V37.3985Z"
+                            fill="#0B0E0D"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-icons col-md-2 col-7 justify-content-md-end  justify-content-between">
+                <button onclick="toggleSearchMenuDisplay();"
+                    class="order-2 order-md-1 macba-button button-basic-m button-menu-secondary button-secondary button-minimal">
+                    <img src="images/ic-search.svg" alt="Search icon">
+                </button>
+                <button onclick="toggleDarkMode(); return false;"
+                    class="order-2 order-md-1 macba-button button-basic-m button-menu-secondary button-secondary button-minimal d-md-flex d-none">
+                    <img src="images/ic-color-mode.svg" alt="Color mode icon">
+                </button>
+                <div class="separator d-none d-md-flex order-md-2"></div>
+                <button onclick="toggleMenuDisplay();"
+                    class="menu-button-menu col-5 order-md-3 order-1 d-flex align-items-center cursor-pointer">
+                    <div class="pe-1 text-capitalize">
+                        menu </div>
+                    <div class="macba-button button-secondary button-basic-m button-minimal p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21.7505 8.25025L1.75049 8.25024L1.75049 6.75024L21.7505 6.75025V8.25025Z"
+                                fill="white"></path>
+                            <path d="M21.7505 12.7502L1.75049 12.7502L1.75049 11.2502L21.7505 11.2502V12.7502Z"
+                                fill="white"></path>
+                            <path d="M1.75049 17.2502L21.7505 17.2502V15.7502L1.75049 15.7502L1.75049 17.2502Z"
+                                fill="white"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="images-container">
+            <img onclick="showImgToView(this)" class="selected h-auto macba-picture col-md-12 col-3 slider-mobile-items"
+                src="https://d2zy2h1755x359.cloudfront.net/public/DigitalAsset/203994/5d398c2f23c1b628e6712928b090e8a5/full/large/0/default.jpg"
+                loading="lazy" alt="2962_001_pub--imatge-days-end">
+            <img onclick="showImgToView(this)" class=" h-auto macba-picture col-md-12 col-3 slider-mobile-items"
+                src="https://d2zy2h1755x359.cloudfront.net/public/DigitalAsset/203995/293a2639829f15c86abc450c9456b26f/full/large/0/default.jpg"
+                loading="lazy" alt="2962_002_pub--imatge-days-end">
+            <img onclick="showImgToView(this)" class=" h-auto macba-picture col-md-12 col-3 slider-mobile-items"
+                src="https://d2zy2h1755x359.cloudfront.net/public/DigitalAsset/203992/d0a1f0a35ac1898804aecb1dc3968ce6/full/large/0/default.jpg"
+                loading="lazy" alt="2962_003_pub--imatge-days-end">
+            <img onclick="showImgToView(this)" class=" h-auto macba-picture col-md-12 col-3 slider-mobile-items"
+                src="https://d2zy2h1755x359.cloudfront.net/public/DigitalAsset/203993/139ae4d0023301750f0aa4685b7bf70f/full/large/0/default.jpg"
+                loading="lazy" alt="2962_004_pub--imatge-days-end">
+        </div>
+        <div class="data-container">
+            <div class="macba-type-container col-md-12 d-flex flex-column">
+                <a href="https://www.macba.cat/en/actor/gordon-matta-clark/" class="card-data macba-type d-flex">
+                    Gordon Matta-Clark <svg class="d-flex svg-icon" xmlns="http://www.w3.org/2000/svg" width="17"
+                        height="16" viewBox="0 0 17 16" fill="none">
+                        <path
+                            d="M10.119 11.1438L8.24959 13.0131C7.59113 13.6716 6.79754 14.0005 5.86882 14C4.94008 13.9995 4.14609 13.6696 3.48687 13.0103C2.82763 12.3511 2.49868 11.5581 2.5 10.6312C2.50132 9.70433 2.83121 8.91167 3.48967 8.25321L5.35904 6.38384L6.07216 7.09696L4.20279 8.96633C3.74212 9.427 3.51179 9.98261 3.51179 10.6332C3.51179 11.2837 3.74212 11.8393 4.20279 12.3C4.66346 12.7607 5.21907 12.991 5.86963 12.991C6.52019 12.991 7.0758 12.7607 7.53647 12.3L9.40584 10.4306L10.119 11.1438ZM7.02164 10.1943L6.30852 9.48116L9.98396 5.80572L10.6971 6.51884L7.02164 10.1943ZM11.6466 9.61616L10.9334 8.90304L12.8028 7.03367C13.2635 6.573 13.4938 6.01739 13.4938 5.36683C13.4938 4.71627 13.2635 4.16066 12.8028 3.69999C12.3421 3.23932 11.7865 3.00899 11.136 3.00899C10.4854 3.00899 9.9298 3.23932 9.46913 3.69999L7.59976 5.56936L6.88664 4.85624L8.75601 2.98686C9.41447 2.32841 10.2081 1.99945 11.1368 2C12.0655 2.00055 12.8595 2.33044 13.5187 2.98966C14.178 3.6489 14.5069 4.44195 14.5056 5.36882C14.5043 6.29567 14.1744 7.08833 13.5159 7.74679L11.6466 9.61616Z"
+                            fill="#0B0E0D" fill-opacity="0.4"></path>
+                    </svg>
+                </a>
+                <div class="d-md-block d-flex flex-column align-items-center">
+                    <div class="artwork-card-title">
+                        Day's End </div>
+                    <div class="card-title-translation">
+                        Day's End </div>
+                    <div class="card-year">
+                        1975 </div>
+                </div>
+                <div class="d-flex macba-tags-container">
+                </div>
+            </div>
+            <div class="card-buttons-container">
+                <a href="https://www.macba.cat/en/repositori-digital/?slug=r2962-days-end" class="data-button">
+                    digital repository </a>
+                <button class="data-button data-button-inverse">
+                    technical sheet </button>
+                <div class="card-buttons-container">
+                    <a href="https://www.macba.cat/en/loan-of-images-from-the-macba-collection-and-archive/"
+                        class="data-button data-button-inverse">
+                        request image </a>
+                    <button type="button" class="small-data-button" data-bs-toggle="modal"
+                        data-bs-target="#shareModal-H877809">
+                        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 17 16" fill="none">
+                            <path
+                                d="M8.27668 0.941406L5.31888 3.8992L5.96618 4.54651L7.81891 2.69378L7.81891 10.6378H8.73444L8.73444 2.69378L10.5872 4.54651L11.2345 3.8992L8.27668 0.941406ZM4.77661 6.30447C4.0236 6.30447 3.40332 6.92475 3.40332 7.67776L3.40332 13.6823C3.40332 14.4353 4.0236 15.0556 4.77661 15.0556L11.7764 15.0556C12.5294 15.0556 13.1497 14.4353 13.1497 13.6823L13.1497 7.67776C13.1497 6.92475 12.5294 6.30447 11.7764 6.30447L10.1077 6.30447L10.1077 7.21999L11.7764 7.21999C12.035 7.21999 12.2341 7.41911 12.2341 7.67776L12.2341 13.6823C12.2341 13.941 12.035 14.1401 11.7764 14.1401L4.77661 14.1401C4.51796 14.1401 4.31884 13.941 4.31884 13.6823L4.31884 7.67776C4.31884 7.41911 4.51796 7.21999 4.77661 7.21999L6.44563 7.21999L6.44563 6.30447L4.77661 6.30447Z"
+                                fill="#0B0E0D"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="form-check-label d-flex align-items-center">
+                    <button class="small-data-button" data-posttype="obra">
+                        <div class="save-item">
+                            <svg class="svg-save-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="ic"
+                                    d="M3.32608 2.34074L3.32608 14.0074L4.06521 13.4567L8.16666 10.877L12.2681 13.4567L13.0072 14.0074L13.0072 2.34074L8.16666 2.34074L3.32608 2.34074ZM4.25362 3.26828L8.16666 3.26828L12.0797 3.26828L12.0797 12.1523L8.44202 9.92045L8.16666 9.71756L7.8913 9.92045L4.25362 12.1523L4.25362 3.26828Z"
+                                    fill="#0B0E0D"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="card-description">
+                    <div class="content-secondary">
+                        This file is in the process of being documented
+                    </div>
+                </div>
+            </div>
+            <div class="text-caption caption-s content-tertiary text-uppercase pb-7 pt-12 sm-pb-0 sm-pt-8">
+                The texts of the MACBA web draw on previous documentation. Please let us know if you find any errors.
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

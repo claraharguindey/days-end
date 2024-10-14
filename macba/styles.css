@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Jet Brain Mono";
+  src: url("fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jet Brain Mono";
+  src: url("fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Launchtype25";
+  src: url("fonts/Lunchtype25-Medium-Condensed.ttf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header {
+  background-color: #0b0e0d;
+  color: #ffffff;
+  padding: 0 24px;
+  z-index: 9999;
+  height: 56px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.artwork-card-title {
+  font-size: 40px;
+  font-family: "Launchtype25";
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.card-title-translation {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #0b0e0d99 !important;
+}
+
+.card-year {
+  color: #0b0e0d99 !important;
+  margin-bottom: 24px;
+}
+
+.artwork-card .macba-tags-container,
+.card-artwork .macba-tags-container {
+  gap: 12px;
+}
+
+.menu-button-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black;
+  height: 24px;
+}
+
+.button-menu-secondary {
+  height: 24px;
+  padding: 6px 12px;
+  line-height: 2px;
+}
+
+header .header-icons {
+  padding: 12px;
+  display: flex;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  height: 56px;
+  align-items: center;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.pe-1 {
+  padding-right: 0.25rem !important;
+  font-size: 18px;
+}
+
+.macba-picture {
+  width: 798px;
+}
+
+.macba-button {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Jet Brain Mono";
+  font-weight: 600;
+  letter-spacing: -2%;
+  color: black;
+  border: 1px solid black;
+  border-radius: 100px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: black;
+}
+.content {
+  margin: 48px 32px;
+  display: flex;
+}
+
+.separator {
+  opacity: 0.12;
+  border-left: 1px solid white;
+  margin-left: 16px;
+  margin-right: 24px;
+  height: 32px;
+}
+
+.card-data.macba-type {
+  font-family: "Jet Brain Mono";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.images-container {
+  width: 798px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.images-container:-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.data-container {
+  margin-left: 24px;
+}
+
+.card-buttons-container {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.data-button {
+  font-family: "Jet Brain Mono";
+  color: white;
+  background: black;
+  padding: 6px 12px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.data-button-inverse {
+  color: black;
+  background: transparent;
+  border: 1px solid #0b0e0d1f;
+}
+
+.small-data-button {
+  padding: 7px;
+  border: 1px solid #0b0e0d1f;
+  background: transparent;
+  border-radius: 100px;
+  height: 32px;
+  width: 32px;
+}
+
+.twelve-lines-content-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.content-secondary {
+  color: #0b0e0d99;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.content-tertiary {
+  color: #0b0e0d66;
+  font-family: "Jet Brain Mono";
+  text-transform: uppercase !important;
+  font-size: 12px;
+  margin-top: 64px;
+}
+
+.publicacions-card .macba-type-container,
+.espai-card .macba-type-container,
+.artwork-card .macba-type-container {
+  gap: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #0b0e0d14;
+}
+
+.macba-tags-container {
+  height: 24px;
+  border-bottom: 1px solid #0b0e0d14;
+  margin-bottom: 24px;
+}
