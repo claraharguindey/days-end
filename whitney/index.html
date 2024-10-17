@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)https://whitney.org/collection/works/43328 -->
 <html lang="en" style="visibility: visible;">
 
 <head>
@@ -17,6 +16,34 @@
         width 300ms ease-out,
         opacity 150ms 150ms ease-in;
       transform: translate3d(0, 0, 0);
+    }
+
+    .fade-in {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .fade-in img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fadeEffect 30s forwards;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
   </style>
   <title>Gordon Matta-Clark | Days End Pier 52.3 (Documentation of the action "Day's End" made in 1975 in New York,
@@ -50,80 +77,55 @@
 
   <link rel="canonical" href="https://whitney.org/collection/works/43328">
 
-  <script
-    src="./files/coreDev.js"
-    type="text/javascript" async=""></script>
-  <script async=""
-    src="./files/clarity.js"></script>
-  <script
-    src="./files/1684932428196399"
-    async=""></script>
-  <script
-    src="./files/4cdcc22f71ec4488a8d312dd417063ad46967ba45ba1494583d13cf23d7873da"
-    type="text/javascript" async=""></script>
-  <script async=""
-    src="./files/fbevents.js"></script>
-  <script type="text/javascript" async=""
-    src="./files/knfbtn27p9"></script>
-  <script type="text/javascript" async=""
-    src="./files/js"></script>
-  <script async=""
-    src="./files/gtm.js"></script>
   <script>
     window.dataLayer = [];
     window.I18n = { "en": { "about": "About", "access": "Access", "access_english_only": "Access", "access_only": "Access content", "all": "All", "all_day": "All day", "artwork": "Artwork", "asl": "ASL", "asl_english_only": "ASL", "audio": "Audio", "audio_description": "Audio description", "audio_english_only": "Audio", "audio_guide": "Audio guide", "audio_guide_english_only": "Audio guide", "audio_guides": "Audio guides", "back": "Back", "bloomberg_callout": "Explore useful tips for visiting the Whitney and discover unique content with", "coat_check": "Coat check", "empty_guides": "No matching guides", "empty_tours": "No more tours today", "exhibition": "Exhibition", "exhibition_guide": "Exhibition guide", "exhibition_tour": "Exhibition tour", "floor": "Floor", "food": "Food", "for_kids": "For kids", "general": "Audio guide", "general_english_only": "Audio guide", "guide": "Guide", "guide_description_archive": "Listen to interviews with artists, curators, and other thinkers, as well as access materials.", "guide_description": "Below, listen to interviews with artists, curators, and other thinkers about works on view, as well as access materials. Also discover more unique content about the Whitney's exhibitions and useful tips for visiting on \u003ca href=\"https://app.bloombergconnects.org/h6R9OVRraHb\"\u003eBloomberg Connects\u003c/a\u003e, the free arts and culture app.", "guide_description_kids": "Explore select exhibitions with audio made especially for 6-10 year olds.", "guide_description_access": "View video transcriptions, sound descriptions, and take tours in ASL.", "kids": "Kids", "kids_english_only": "Kids", "listen_now": "Listen now", "map": "Map", "meet_the_director": "Meet the director", "dark": "Dark", "only_english": "Only in English", "performance": "Performance", "reduced_motion": "Reduced motion", "restroom": "Restroom", "see_more_on": "See more on", "shop": "Shop", "sound_description": "Sound description", "stop": "stop", "stops": "stops", "tours": "Tours", "transcript": "Transcript", "transcript_english_only": "Transcript", "transcription": "Transcription", "transcription_english_only": "Transcription", "verbal_description": "Verbal description", "verbal_description_english_only": "Verbal description", "datetime": { "distance_in_words": { "half_a_minute": "half a minute", "less_than_x_seconds": { "one": "1 second", "other": "%{count} seconds" }, "x_seconds": { "one": "1 second", "other": "%{count} seconds" }, "less_than_x_minutes": { "one": "a minute", "other": "%{count} minutes" }, "x_minutes": { "one": "1 minute", "other": "%{count} minutes" }, "about_x_hours": { "one": "1 hour", "other": "%{count} hours" }, "x_days": { "one": "1 day", "other": "%{count} days" }, "about_x_months": { "one": "1 month", "other": "%{count} months" }, "x_months": { "one": "1 month", "other": "%{count} months" }, "about_x_years": { "one": "1 year", "other": "%{count} years" }, "over_x_years": { "one": "1 year", "other": "%{count} years" }, "almost_x_years": { "one": "1 year", "other": "%{count} years" } } }, "views": { "pagination": { "first": "\u0026laquo; First", "last": "Last \u0026raquo;", "previous": "\u0026lsaquo; Prev", "next": "Next \u0026rsaquo;", "truncate": "\u0026hellip;" } }, "helpers": { "page_entries_info": { "one_page": { "display_entries": { "zero": "No %{entry_name}", "one": "1 %{entry_name}", "other": "%{count} %{entry_name}" } }, "more_pages": { "display_entries": "%{total} %{entry_name}" } } } }, "es": { "about": "Acerca de", "access": "Acceso", "access_english_only": "Acceso (inglés)", "access_only": "Acceso al contenido", "all": "Todo", "all_day": "Todo el dia", "artwork": "Obra", "asl": "ASL", "asl_english_only": "ASL", "audio": "Audio", "audio_description": "Descripción de audio", "audio_english_only": "Audio (inglés)", "audio_guide": "Guía de audio", "audio_guide_english_only": "Guía de audio (inglés)", "audio_guides": "Guías de audio", "back": "Volver", "bloomberg_callout": "Explora consejos útiles para visitar el Whitney y descubre contenido único con", "coat_check": "Guardarropa", "empty_guides": "Sin guías coincidentes", "empty_tours": "No hay más giras hoy", "exhibition": "Exposición", "exhibition_guide": "Guía de exposición", "exhibition_tour": "Gira de exposición", "floor": "Piso", "food": "Comida", "for_kids": "Para niños en español", "general": "Guía de audio", "general_english_only": "Guía de audio (inglés)", "guide": "Guía", "guide_description_archive": "Escucha entrevistas con artistas, curadores y otros pensadores, así como recursos de accesibilidad.", "guide_description": "A continuación, escucha entrevistas con artistas, curadores y otros pensadores sobre las obras en exposición, así como recursos de accesibilidad. También descubre más contenido único acerca de las exposiciones del Whitney y explora consejos útiles para visitar en \u003ca href=\"https://app.bloombergconnects.org/h6R9OVRraHb\"\u003eBloomberg Connects\u003c/a\u003e, la aplicación gratuita de arte y cultura.", "guide_description_kids": "Explore exhibiciones selectas con audio hecho especialmente para niños de 6-10 años.", "guide_description_access": "Vea transcripciones de video, descripciones de sonido, y hacer guiras en ASL.", "kids": "Niños", "kids_english_only": "Niños (inglés)", "listen_now": "En Español", "map": "Mapa", "meet_the_director": "Conoce al director", "dark": "Oscuro", "only_english": "Solo en inglés", "performance": "Actuación", "reduced_motion": "Movimiento reducido", "restroom": "Baños", "see_more_on": "Vea más en", "shop": "Tienda", "sound_description": "Descripción de sonido", "stop": "parada", "stops": "paradas", "tours": "Giras", "transcript": "Transcripción", "transcription": "Transcripción", "transcription_english_only": "Transcripción (inglés)", "verbal_description": "Descripción verbal", "verbal_description_english_only": "Descripción verbal (inglés)" } };
     window.locales = { english: 'en', spanish: 'es' };
   </script>
 
-  <link rel="stylesheet"
-    href="./files/application-7baf7a862cc289c2492e53619f4899d9fb7a8507beb143e6aeff234337b81911.css"
+  <link rel="stylesheet" href="./files/application-7baf7a862cc289c2492e53619f4899d9fb7a8507beb143e6aeff234337b81911.css"
     media="all">
-  <script
-    src="./files/global-b0925be65336c77a0621d2420086a2d17c9d2f66514c29f99f855870df640ed3.js"></script>
-  <script
-    src="./files/application-deb4c2312ff4e8729d9b10804385313848b35f6172018aeded90630aac7f2d67.js"></script>
 
 
   <style>
     @font-face {
       font-family: 'haas-grotesk-text';
-      src: url('/fonts/Haas_Grot_Text_55_Roman.woff2') format('woff2');
+      src: url('fonts/Haas_Grot_Text_55_Roman.woff2') format('woff2');
       font-weight: 400;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'haas-grotesk-text';
-      src: url('/fonts/Haas_Grot_Text_56_Italic.woff2') format('woff2');
+      src: url('fonts/Haas_Grot_Text_56_Italic.woff2') format('woff2');
       font-weight: 400;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'haas-grotesk-text';
-      src: url('/fonts/Haas_Grot_Text_75_Bold.woff2') format('woff2');
+      src: url('fonts/Haas_Grot_Text_75_Bold.woff2') format('woff2');
       font-weight: 700;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'haas-grotesk-text';
-      src: url('/fonts/Haas_Grot_Text_76_Bold_Italic.woff2') format('woff2');
+      src: url('fonts/Haas_Grot_Text_76_Bold_Italic.woff2') format('woff2');
       font-weight: 700;
       font-style: italic;
     }
 
-    /* Headline */
     @font-face {
       font-family: 'haas-grotesk-sign';
-      src: url('/fonts/HaasGrotSign-65Medium-Web.woff2') format('woff2');
+      src: url('fonts/HaasGrotSign-65Medium-Web.woff2') format('woff2');
       font-weight: 700;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'haas-grotesk-sign';
-      src: url('/fonts/HaasGrotSign-66MediumItalic-Web.woff2') format('woff2');
+      src: url('fonts/HaasGrotSign-66MediumItalic-Web.woff2') format('woff2');
       font-weight: 700;
       font-style: italic;
     }
@@ -136,15 +138,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://whitney.org/favicon-16x16.png">
 
 
-  <script
-    src="./files/script.js"
-    data-site="HUPIRANV" defer=""></script>
+  <script src="./files/script.js" data-site="HUPIRANV" defer=""></script>
 
 
-  <iframe style="height:0; width: 0; display:none;"
-    src="./files/saved_resource.html"></iframe>
-  <script type="text/javascript" async=""
-    src="./files/364137"></script>
+  <iframe style="height:0; width: 0; display:none;" src="./files/saved_resource.html"></iframe>
+  <script type="text/javascript" async="" src="./files/364137"></script>
   <script type="text/javascript"
     async="">var i = document.createElement('img'); i.setAttribute('alt', ''); i.setAttribute('src', 'https://ad.doubleclick.net/ddm/activity/src=13669335;type=track0;cat=thewh0;qty=1;cost=0;u1=;u14=;u15=New York City;u16=;u17=USA;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=UNKNOWN'); i.setAttribute('height', '1'); i.setAttribute('width', '1'); i.setAttribute('style', 'display: none;'); document.body.appendChild(i);</script>
   <script type="text/javascript"
@@ -164,7 +162,9 @@
   <header id="navigation" class="header" data-turbo-permanent="">
     <a href="https://whitney.org/collection/works/43328#main" class="skip-to-content body-medium-bold">Skip to main
       content</a>
-
+    <div class="fade-in">
+      <img src="mncars/daysend.png" alt="Days end photo">
+    </div>
     <div class="navigation content-wrapper" data-initialized="true">
       <div class="w">
         <a href="https://whitney.org/" class="w__link" tabindex="-1" aria-label="Whitney Museum of American Art">
@@ -1153,8 +1153,7 @@
       </button>
     </div>
 
-    <iframe class="on-the-hour__iframe" allowtransparency="true"
-      src="./files/saved_resource(1).html"></iframe>
+    <iframe class="on-the-hour__iframe" allowtransparency="true" src="./files/saved_resource(1).html"></iframe>
   </section>
 
   <turbo-frame id="flash"></turbo-frame>
@@ -1171,25 +1170,19 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=616632145128006&amp;ev=PageView&amp;noscript=1"></noscript>
 
-  <script type="text/javascript"
-    id="">(function (b) {
-        var h = "https://nimbleswan.io/anywhere/", k = "4cdcc22f71ec4488a8d312dd417063ad46967ba45ba1494583d13cf23d7873da", l = window.AutopilotAnywhere = { _runQueue: [], run: function () { this._runQueue.push(arguments) } }, d = encodeURIComponent, f = "SCRIPT", a = document, g = a.getElementsByTagName(f)[0], e = "t\x3d" + d(a.title || "") + "\x26u\x3d" + d(a.location.href || "") + "\x26r\x3d" + d(a.referrer || ""), m = "text/javascript"; window.Autopilot || (window.Autopilot = l); b.app && (e = "devmode\x3dtrue\x26" + e); var q = function (n, p) {
-          var c = a.createElement(f);
-          c.src = n; c.type = m; c.async = p; g.parentNode.insertBefore(c, g)
-        }; b = function () { q(h + k + "?" + e, !0) }; window.attachEvent ? window.attachEvent("onload", b) : window.addEventListener("load", b, !1)
-      })({ app: !0 });</script>
-  <script type="text/javascript" id=""
-    src="./files/sjrn_autocx.js"></script>
-  <script type="text/javascript"
-    id="">(function () {
-        var a = { vf1: "New York City", vn1: "USA", pn: "", pc: "", sha256_eml: "", sha1_eml: "", md5_eml: "", ccid: "" }; try { a = Object.assign({}, sjrn_params, a) } catch (g) { } var c = [], d = [], e = [], b = document.createElement("iframe"), f = { vid: "tou" }; for (key in f) a[key] = f[key]; for (key in e) c.push(a[e[key]]); a.cid = c.join("|"); for (key in a) d.push(key + "\x3d" + encodeURIComponent(a[key])); b.type = "text/html"; b.setAttribute("style", "height:0; width: 0; display:none;"); b.async = !0; b.src = "https://static.sojern.com/cip/w/s?id\x3d364137\x26f_v\x3dv6_js\x26p_v\x3d1\x26" +
-          d.join("\x26"); (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(b)
-      })();</script>
-  <img alt=""
-    src="./files/src=13669335"
-    height="1" width="1" style="display: none;"><img alt="" height="1" width="1" style="display: none;"
-    src="./files/pixel"><img
-    alt="" height="1" width="1" style="display: none;"
+  <script type="text/javascript" id="">(function (b) {
+      var h = "https://nimbleswan.io/anywhere/", k = "4cdcc22f71ec4488a8d312dd417063ad46967ba45ba1494583d13cf23d7873da", l = window.AutopilotAnywhere = { _runQueue: [], run: function () { this._runQueue.push(arguments) } }, d = encodeURIComponent, f = "SCRIPT", a = document, g = a.getElementsByTagName(f)[0], e = "t\x3d" + d(a.title || "") + "\x26u\x3d" + d(a.location.href || "") + "\x26r\x3d" + d(a.referrer || ""), m = "text/javascript"; window.Autopilot || (window.Autopilot = l); b.app && (e = "devmode\x3dtrue\x26" + e); var q = function (n, p) {
+        var c = a.createElement(f);
+        c.src = n; c.type = m; c.async = p; g.parentNode.insertBefore(c, g)
+      }; b = function () { q(h + k + "?" + e, !0) }; window.attachEvent ? window.attachEvent("onload", b) : window.addEventListener("load", b, !1)
+    })({ app: !0 });</script>
+  <script type="text/javascript" id="" src="./files/sjrn_autocx.js"></script>
+  <script type="text/javascript" id="">(function () {
+      var a = { vf1: "New York City", vn1: "USA", pn: "", pc: "", sha256_eml: "", sha1_eml: "", md5_eml: "", ccid: "" }; try { a = Object.assign({}, sjrn_params, a) } catch (g) { } var c = [], d = [], e = [], b = document.createElement("iframe"), f = { vid: "tou" }; for (key in f) a[key] = f[key]; for (key in e) c.push(a[e[key]]); a.cid = c.join("|"); for (key in a) d.push(key + "\x3d" + encodeURIComponent(a[key])); b.type = "text/html"; b.setAttribute("style", "height:0; width: 0; display:none;"); b.async = !0; b.src = "https://static.sojern.com/cip/w/s?id\x3d364137\x26f_v\x3dv6_js\x26p_v\x3d1\x26" +
+        d.join("\x26"); (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(b)
+    })();</script>
+  <img alt="" src="./files/src=13669335" height="1" width="1" style="display: none;"><img alt="" height="1" width="1"
+    style="display: none;" src="./files/pixel"><img alt="" height="1" width="1" style="display: none;"
     src="./files/generic">
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
     <style>
