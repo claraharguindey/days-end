@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: "PFDinTextPro";
+  src: url("./fonts/PFDinTextPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinTextPro-Thin";
+  src: url("./fonts/PFDinTextPro-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinTextPro-Bold";
+  src: url("./fonts/PFDinTextPro.woff") format("woff");
+}
+
+.proyectos-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .proyectos-row {
+    flex-direction: column;
+  }
+}
+.proyectos-items {
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .proyectos-items {
+    width: 100%;
+  }
+}
+

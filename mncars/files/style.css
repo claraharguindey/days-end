@@ -1,0 +1,32 @@
+
+[class^="icono--"], [class*=" icono--"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icono--punto-mapa:before {
+	content: "\e600";
+}
+.icono--aforo:before {
+	content: "\e601";
+}
+.icono--entrada:before {
+	content: "\e602";
+}
+.icono--duracion:before {
+	content: "\e94e";
+}
+.icono--calendario:before {
+	content: "\e953";
+}
+
