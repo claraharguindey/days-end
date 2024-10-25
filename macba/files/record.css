@@ -1,0 +1,325 @@
+.coeli-object-data ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.coeli-object-data ul li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.coeli-object-data dl {
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.coeli-object-data li:not(.coeli-embedded) > dl > dt, .coeli-embedded-item dt {
+    font-weight: 600;
+    min-width: 10rem;
+    max-width: 10rem;
+    line-height: 1.3em;
+}
+
+.coeli-object-data dd {
+    margin-left: 2rem;
+}
+
+.coeli-fitxa a {
+    color: rgb(69, 124, 190);
+    font-weight: bold;
+}
+
+.coeli-nav-fitxes {
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    bottom: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    transition: all 0.3s;
+    display: none;
+}
+
+.coeli-nav-fitxes.coeli-from-list {
+    display: flex;
+}
+
+.coeli-nav-fitxes .coeli-torna-cerca {
+    border: 0;
+    width: max-content;
+    background-color: #fff;
+    background-image: url(../../images/more-back-black.svg);
+    background-position: left 0.5em center;
+    padding-left: 35px;
+    padding-right: 20px;
+    border-radius: 0.8em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1.6em;
+}
+
+.coeli-nav-fitxes span a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.coeli-fitxa-container {
+    display: flex;
+    padding: 25px;
+    gap: 15px;
+    width: 100%;
+}
+
+.coeli-fitxa-sidebar {
+    flex-basis: 30%;
+    overflow: hidden;
+}
+
+.coeli-fitxa-contents {
+    flex-basis: 70%;
+}
+
+.coeli-fitxa-contents h3 {
+    margin-top: 0;
+}
+
+.coeli-fitxa {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.inner-slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.coeli-fitxa-gallery-image {
+    margin-bottom: 10px;
+}
+
+
+.coeli-fitxa-gallery-image span, .coeli-legend {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    padding: 3px 10px;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.coeli-fitxa-gallery-image span:empty, .coeli-legend:empty {
+    display: none;
+}
+
+.coeli-loading-gallery span {
+    display: none;
+}
+
+.coeli-featured-img {
+    height: 50vh;
+    background-color: lightgray;
+}
+
+.coeli-featured-img img, .coeli-featured-img audio {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+.coeli-selected-image {
+    border: 3px solid #000 !important;
+}
+
+.coeli-gallery-main {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.coeli-gallery-thumbs {
+    height: 80px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.coeli-gallery-wrapper .swiper-button-next, .coeli-gallery-wrapper .swiper-button-prev {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: auto;
+    left: auto;
+    height: 30px;
+    width: 30px;
+    color: #e9e9e9;
+    background: #1e1e1e;
+}
+
+.coeli-gallery-thumbs .swiper-thumbs-button-next, .coeli-gallery-thumbs .swiper-thumbs-button-prev {
+    width: 25px;
+    height: 25px;
+}
+
+.coeli-gallery-wrapper .swiper-button-next:after, .coeli-gallery-wrapper .swiper-button-prev:after {
+    font-size: 12px;
+}
+
+.coeli-gallery-main .swiper-button-prev, .coeli-gallery-thumbs .swiper-thumbs-button-prev {
+    left: 0px;
+    border-right: 1px solid #e9e9e9;
+}
+
+.swiper-thumbs-button-next.swiper-button-disabled, .swiper-thumbs-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.coeli-gallery-main .inner-slide img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain;
+}
+
+.coeli-gallery-main .inner-slide {
+    height: 100%;
+}
+
+.coeli-gallery-main .inner-slide audio {
+    max-width: 95%;
+}
+
+.coeli-link-pdf {
+    position: relative;
+    display: block;
+}
+
+.coeli-link-pdf:after {
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 5px;
+    background-image: url(../../images/PDF_file_icon.svg);
+    width: 50px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coeli-info-media {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 10px;
+}
+
+.coeli-gallery-thumbs .swiper-slide:hover {
+    cursor: pointer;
+}
+
+.coeli-gallery-thumbs .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.coeli-gallery-thumbs .swiper-slide.swiper-slide-thumb-active {
+    border: 1px solid #1e1e1e;
+    opacity: 1;
+    box-shadow: 0 0 15px grey;
+}
+
+.coeli-gallery-thumbs .swiper-slide {
+    opacity: 0.8;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.coeli-gallery-wrapper {
+    opacity: 1;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.coeli-gallery-wrapper:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/ajax-loader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: " ";
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 55;
+}
+
+.coeli-gallery-wrapper.coeli-gallery-loaded {
+    opacity: 1;
+}
+
+.coeli-gallery-wrapper.coeli-gallery-loaded:after {
+    display: none;
+}
+
+.coeli-embedded-item {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.coeli-embedded-item dl {
+    display: flex;
+    margin: 0 10px;
+}
+
+.coeli-embedded-item dt {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 15px;
+}
+.coeli-page-fitxa #popup{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .coeli-fitxa-container {
+        flex-direction: column;
+    }
+
+    .coeli-fitxa-sidebar {
+        flex-basis: 100%;
+    }
+
+    .coeli-fitxa-container {
+        display: flex;
+        gap: 15px;
+        margin: 15px;
+    }
+
+    .coeli-nav-fitxes {
+        padding-top: 100px;
+    }
+}
