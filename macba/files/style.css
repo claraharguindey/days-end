@@ -7560,27 +7560,12 @@ button.ui-state-default.ui-corner-all {
 }
 
 .twelve-lines-content-text {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 12;
-	-webkit-box-orient: vertical;
 }
 
 .dark-mode .publicacions-right-content .text-content-overflow {
 	color: var(--global--content-inverted-secondary)!important;
 }
 
-@media screen and (max-width: 768px) {
-	.tour-item-right-description .five-lines-content-text,
-	.twelve-lines-content-text {
-		text-overflow: ellipsis;
-		overflow: hidden;
-		display: -webkit-box;
-		-webkit-line-clamp: 5;
-		-webkit-box-orient: vertical;
-	}
-}
 
 .tour-item-right-description .five-lines-content-text.expand,
 .twelve-lines-content-text.expand {
